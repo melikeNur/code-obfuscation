@@ -70,17 +70,11 @@ fs.readFile("./sample1.js","UTF-8",function(err,Data){
 
     console.log("file is saved");
     var res = result.concat(deadCode(result));
-     var hadi = changeVar(res);
-     fs.writeFile('./ObfuscatedSample.js',hadi,function(err){
+     var re = changeVar(res);
+     fs.writeFile('./ObfuscatedSample.js',re,function(err){
         if (err){
             return console.log(err);
         }
-        //const encodedData = btoa('Hello, world');  
-        //console.log(Buffer.from(res).toString('base64'));
-        
-         //$("var");
-         //console.log(globalRegex.lastIndex);
-        changeVar(res);
                 
 });
 });
