@@ -71,7 +71,7 @@ fs.readFile("./sample1.js","UTF-8",function(err,Data){
     console.log("file is saved");
     var res = result.concat(deadCode(result));
      var re = changeVar(res);
-     fs.writeFile('./ObfuscatedSample.js',re,function(err){
+     fs.writeFile('./obfuscatedWithMyObfuscator.js',re,function(err){
         if (err){
             return console.log(err);
         }
