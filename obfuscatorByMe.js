@@ -17,6 +17,10 @@ const numbers ='0123456789';
     return list;
 }
 */
+function singleLine(list){
+    var result = list.toString().replace(/^\s+|\s+$/gm,'');
+    return result;
+}
 function changeVar(res){
     const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     const regex = new RegExp(/var/g);
@@ -27,13 +31,9 @@ function changeVar(res){
     while ((array1 = regex.exec(res)) !== null) { 
       var b = regex.lastIndex;
       var k = res.charAt(b+1); 
-      console.log(k);
       array.push(k);
-      //var d = res.replace(" "+k, " xox"); 
-      //res =d;
-      //console.log(d);
     }
-    console.log(array);
+    //console.log(array);
     for(let i =0;i<array.length;i++){
         for ( let i = 0; i < charactersLength; i++ ) {
             newVal += characters.charAt(Math.floor(Math.random() * charactersLength));
@@ -43,7 +43,7 @@ function changeVar(res){
 
         var g = res.replace(globalRegex,newVal);
         res=g;
-        console.log(g);
+       // console.log(g);
     }
     return res;
     
@@ -66,7 +66,8 @@ fs.readFile("./sample1.js","UTF-8",function(err,Data){
     if (err){
         return console.log(err);
     }
-    var result = Data.toString().replace(/^\s+|\s+$/gm,'');
+    var result = singleLine(Data);
+    //console.log(result);
 
     console.log("file is saved");
     var res = result.concat(deadCode(result));
