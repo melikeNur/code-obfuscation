@@ -100,7 +100,7 @@ Obfuscation is done in software to make the codes less understandable.
  ## The output of the code obfuscated with obfuscatorByMe is exactly the same as the output of the original code.
            
 ### 2.)javascript-obfuscator
-     I used 'compact', 'controlFlowFlattening', 'numbersToExpressions', 'shuffleStringArray' and 'splitStrings' features of javascript obfuscator in this project.
+  #####   I used 'compact', 'controlFlowFlattening', 'numbersToExpressions', 'shuffleStringArray' and 'splitStrings' features of javascript obfuscator in this project.
  #### compact
      Makes the code one line.
  #### controlFlowFlattening
