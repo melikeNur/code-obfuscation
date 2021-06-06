@@ -99,3 +99,40 @@ Obfuscation is done in software to make the codes less understandable.
 
  ## The output of the code obfuscated with obfuscatorByMe is exactly the same as the output of the original code.
            
+### 2.)javascript-obfuscator
+     I used 'compact', 'controlFlowFlattening', 'numbersToExpressions', 'shuffleStringArray' and 'splitStrings' features of javascript obfuscator in this project.
+ #### compact
+     Makes the code one line.
+ #### controlFlowFlattening
+     It enables control flow flattening, a structure transformation that prevents understanding of the source code.
+ #### numbersToExpressions
+     Converts numbers to expressions
+ #### shuffleStringArray
+     Randomly shuffles stringArray elements.
+ #### splitStrings
+     Splits literal strings.
+ #### Example of javascript-obfuscator(same input file as obfuscatorByMe)
+     //input
+     var a = 'word';
+     var b = true;
+     var c = true;
+     var d = 0;
+     var e = 32;
+     var f = 3;
+     var g = null;
+     var m = e * f;
+
+
+     console.log( a || b); 
+     console.log( c || a); 
+     console.log( b || a); 
+     console.log( e || f); 
+     console.log( f || e); 
+     console.log( d || g); 
+     console.log( g || d); 
+     console.log( a && c); 
+     console.log( c && a);
+     console.log( m ); 
+     //output
+     var _0x2029=['34KLESoV','794442CfBJBB','34735fmUNiY','4383271xCIAug','51358euERgt','1009166ndbdgy','log','2SzCuuJ','7yebwRh','186761ypjxDo','1DdHziS','148244VWgVRH','word'];var _0x3e5a0e=_0x1cf3;(function(_0x449755,_0x2caf07){var _0x49d2c8=_0x1cf3;while(!![]){try{var _0x462877=parseInt(_0x49d2c8(0x102))+-parseInt(_0x49d2c8(0x105))*-parseInt(_0x49d2c8(0x107))+-parseInt(_0x49d2c8(0xff))+-parseInt(_0x49d2c8(0x100))*parseInt(_0x49d2c8(0xfe))+-parseInt(_0x49d2c8(0x103))+-parseInt(_0x49d2c8(0x109))*parseInt(_0x49d2c8(0x106))+parseInt(_0x49d2c8(0x108))*parseInt(_0x49d2c8(0x101));if(_0x462877===_0x2caf07){break;}else{_0x449755['push'](_0x449755['shift']());}}catch(_0x3163a4){_0x449755['push'](_0x449755['shift']());}}}(_0x2029,-0x5109f+-0xc05d7+0x1d142b));var a=_0x3e5a0e(0xfd);var b=!![];var c=!![];var d=-0x1d*-0x47+-0x28c*-0x3+0x1*-0xfaf;var e=0x577*-0x7+-0x1916+0x4d*0xd3;var f=-0xe71*0x1+0xee0+-0x6c;var g=null;function _0x1cf3(_0x4f171e,_0x1d4728){_0x4f171e=_0x4f171e-(0x637+-0x2d1+0x1*-0x269);var _0x500155=_0x2029[_0x4f171e];return _0x500155;}var m=e*f;console[_0x3e5a0e(0x104)](a||b);console[_0x3e5a0e(0x104)](c||a);console[_0x3e5a0e(0x104)](b||a);console[_0x3e5a0e(0x104)](e||f);console[_0x3e5a0e(0x104)](f||e);console[_0x3e5a0e(0x104)](d||g);console[_0x3e5a0e(0x104)](g||d);console[_0x3e5a0e(0x104)](a&&c);console[_0x3e5a0e(0x104)](c&&a);console[_0x3e5a0e(0x104)](m);
+     
