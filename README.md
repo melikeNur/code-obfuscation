@@ -100,17 +100,17 @@ Obfuscation is done in software to make the codes less understandable.
  ## The output of the code obfuscated with obfuscatorByMe is exactly the same as the output of the original code.
            
 ### 2.)javascript-obfuscator
-  #####   I used 'compact', 'controlFlowFlattening', 'numbersToExpressions', 'shuffleStringArray' and 'splitStrings' features of javascript obfuscator in this project.
+  ######   I used 'compact', 'controlFlowFlattening', 'numbersToExpressions', 'shuffleStringArray' and 'splitStrings' features of javascript obfuscator in this project.
  #### compact
-     Makes the code one line.
+  ######   Makes the code one line.
  #### controlFlowFlattening
-     It enables control flow flattening, a structure transformation that prevents understanding of the source code.
+  ######   It enables control flow flattening, a structure transformation that prevents understanding of the source code.
  #### numbersToExpressions
-     Converts numbers to expressions
+  ######   Converts numbers to expressions
  #### shuffleStringArray
-     Randomly shuffles stringArray elements.
+  ######   Randomly shuffles stringArray elements.
  #### splitStrings
-     Splits literal strings.
+   ######  Splits literal strings.
  #### Example of javascript-obfuscator(same input file as obfuscatorByMe)
      //input
      var a = 'word';
