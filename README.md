@@ -1,15 +1,15 @@
 # code-obfuscation
 Obfuscation is done in software to make the codes less understandable.
-## Its purpose is security and privacy. 
-## The tools we call obfuscator are things that make the code we write more difficult to understand, that is, obfuscate.
-## In other words, the obfuscation process does not affect the functioning of the code, it only makes the code more misunderstandable.
+# Its purpose is security and privacy. 
+# The tools we call obfuscator are things that make the code we write more difficult to understand, that is, obfuscate.
+# In other words, the obfuscation process does not affect the functioning of the code, it only makes the code more misunderstandable.
 
-##In this project, I obfuscated js codes with both a simple obfuscator I made and a ready-made library called javascript-obfuscator. I ran the same sample code with both obfuscators. I got different but quite complex, hard to understand codes. I also obfuscated the js codes in the react project that I had created before with the help of javascript obfuscator. You can find the obfuscated version and the unobfuscated version in the relevant folder.[counter-app](https://github.com/melikeNur/code-obfuscation/tree/master/counter-app(obfuscatedMyReactApp))
+ In this project, I obfuscated js codes with both a simple obfuscator I made and a ready-made library called javascript-obfuscator. I ran the same sample code with both obfuscators. I got different but quite complex, hard to understand codes. I also obfuscated the js codes in the react project that I had created before with the help of javascript obfuscator. You can find the obfuscated version and the unobfuscated version in the relevant folder.[counter-app](https://github.com/melikeNur/code-obfuscation/tree/master/counter-app(obfuscatedMyReactApp))
 
-**1.)obfuscatorByMe
-     ### function changeVar
-          This function makes variable names messy and very hard to read.
-            ```//input
+# 1.)obfuscatorByMe
+ #     function changeVar
+  #        This function makes variable names messy and very hard to read.
+            //input
             var a = 'word';
             var b = true;
             var c = true;
@@ -28,9 +28,9 @@ Obfuscation is done in software to make the codes less understandable.
           var QR7wiUTBbzy2w7Gp2DDcY5JBfXpBtKtyQPFD1tk8jXZxKLEqCVD28Vi6lmyQHZLlBWecI6gXr4HdXuWUYPO0bDxOVBrH7YpDAXvJMZqNbwobwv7aDRsXAeiYOdS1kEBCwuo8IYcRNTcYWF5G5p4Hk94bgYo61ricoXobxOk1mEFVoqduGQInCA7X1XoDpuayignOxtS3ooPY3y2rYAAy36QEv9NeRAc7vBJWORF0RAJcGijEStX93u7IcCxhwXhMn6lGMuURhk1ijxgNNC6bmhsZyxtwWsyjLLUkdT7MLUF0uuqxFBKq6HE3HbSIDmzBTfMJ3YRee9OKmIEl3hoOjrESe40RpIlovCvy2170nTGB1iANy2SN3pX4lYmmhOmQnlaKTUqBxn8RvqwLv4wRIbKCkbO3NdirNepivngmksGd0ar3LdAsJNGT0C6P4awKztBlwJsGYEGeJoiEVFY9Jk9tvJH9ioTkbEaZ3rb3V6rJ7nKFNpU9AFn1l6t0ve9Z76C0XVHSq2hC9qTnA = null;
           var QR7wiUTBbzy2w7Gp2DDcY5JBfXpBtKtyQPFD1tk8jXZxKLEqCVD28Vi6lmyQHZLlBWecI6gXr4HdXuWUYPO0bDxOVBrH7YpDAXvJMZqNbwobwv7aDRsXAeiYOdS1kEBCwuo8IYcRNTcYWF5G5p4Hk94bgYo61ricoXobxOk1mEFVoqduGQInCA7X1XoDpuayignOxtS3ooPY3y2rYAAy36QEv9NeRAc7vBJWORF0RAJcGijEStX93u7IcCxhwXhMn6lGMuURhk1ijxgNNC6bmhsZyxtwWsyjLLUkdT7MLUF0uuqxFBKq6HE3HbSIDmzBTfMJ3YRee9OKmIEl3hoOjrESe40RpIlovCvy2170nTGB1iANy2SN3pX4lYmmhOmQnlaKTUqBxn8RvqwLv4wRIbKCkbO3NdirNepivngmksGd0ar3LdAsJNGT0C6P4awKztBlwJsGYEGeJoiEVFY9Jk9tvJH9ioTkbEaZ3rb3V6rJ7nKFNpU9AFn1l6t0ve9Z76C0XVHSq2hC9qTnAFqShiCsbm8dsOMBDOAe953XCXFeQMKDNxcNZUiAgvZdOpASkjMFBDaDqbnLwYb5XBgXG5pTLzJ = QR7wiUTBbzy2w7Gp2DDcY5JBfXpBtKtyQPFD1tk8jXZxKLEqCVD28Vi6lmyQHZLlBWecI6gXr4HdXuWUYPO0bDxOVBrH7YpDAXvJMZqNbwobwv7aDRsXAeiYOdS1kEBCwuo8IYcRNTcYWF5G5p4Hk94bgYo61ricoXobxOk1mEFVoqduGQInCA7X1XoDpuayignOxtS3ooPY3y2rYAAy36QEv9NeRAc7vBJWORF0RAJcGijEStX93u7IcCxhwXhMn6lGMuURhk1ijxgNNC6bmhsZyxtwWsyjLLUkdT7MLUF0uuqxFBKq6HE3HbSIDmzBTfMJ3YRee9OKmIEl3hoOjrESe40RpIlovCvy2170nTGB1iANy2SN3pX4lYmmhOmQnlaKTU * QR7wiUTBbzy2w7Gp2DDcY5JBfXpBtKtyQPFD1tk8jXZxKLEqCVD28Vi6lmyQHZLlBWecI6gXr4HdXuWUYPO0bDxOVBrH7YpDAXvJMZqNbwobwv7aDRsXAeiYOdS1kEBCwuo8IYcRNTcYWF5G5p4Hk94bgYo61ricoXobxOk1mEFVoqduGQInCA7X1XoDpuayignOxtS3ooPY3y2rYAAy36QEv9NeRAc7vBJWORF0RAJcGijEStX93u7IcCxhwXhMn6lGMuURhk1ijxgNNC6bmhsZyxtwWsyjLLUkdT7MLUF0uuqxFBKq6HE3HbSIDmzBTfMJ3YRee9OKmIEl3hoOjrESe40RpIlovCvy2170nTGB1iANy2SN3pX4lYmmhOmQnlaKTUqBxn8RvqwLv4wRIbKCkbO3NdirNepivngmksGd0ar3LdAsJNGT0C6P4awKztBlwJsGYEGe;   
       ```    
-     ### **function singleLine**  
-      It fits all the code in one line.
-        ```//input```
+#    function singleLine  
+#      It fits all the code in one line.
+        //input
         var a = 'word';
         var b = true;
         var c = true;
@@ -51,8 +51,8 @@ Obfuscation is done in software to make the codes less understandable.
         console.log( m ); 
         ```//output```
         var a = 'word';var b = true;var c = true;var d = 0;var e = 32;var f = 3;var g = null;var m = e * f;console.log( a || b);console.log( c || a);console.log( b ||      a);console.log( e || f);console.log( f || e);console.log( d || g);console.log( g || d);console.log( a && c);console.log( c && a);console.log( m );
-        **function deadCode**
-        It adds random strings that have no meaning and function to the code.
+  #      function deadCode
+  #      It adds random strings that have no meaning and function to the code.
         ```input```
         var a = 'word';
         var b = true;
