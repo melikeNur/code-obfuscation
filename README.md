@@ -30,7 +30,7 @@ Obfuscation is done in software to make the codes less understandable.
       ```    
 ####    function singleLine  
 ######      It fits all the code in one line.
-        input
+        //input
         var a = 'word';
         var b = true;
         var c = true;
