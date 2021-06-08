@@ -22,7 +22,7 @@ function singleLine(list){
     return result;
 }
 function changeVar(res){
-    const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     const regex = new RegExp(/var/g);
     let array1;
     let newVal = ' ';
